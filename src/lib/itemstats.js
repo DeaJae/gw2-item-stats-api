@@ -76,7 +76,9 @@ function getCalcFunction(itemAttributes, selectedStat) {
       return getCalcFunctionStandard(itemAttributes, selectedStat);
     case 4:
       return getCalcFunctionQuad(itemAttributes, selectedStat);
-    case 7:
+    //case 7: assuming +1, 6 stats is old celestial.
+    case 9:
+      // adding 2 more for new Celestial to work.
       return getCalcFunctionCelectiel(itemAttributes);
     default:
       throw new Error("impossible condition");
